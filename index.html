@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruta Clara Huancayo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo-icon">🚌</span>
+      <div>
+        <h1>RUTA·CLARA</h1>
+        <small>Huancayo, Perú</small>
+      </div>
+    </div>
+
+    <nav class="nav" id="main-nav">
+      <button class="nav-btn active" data-view="inicio">🏠 Inicio</button>
+      <button class="nav-btn" data-view="horarios">🕒 Horarios</button>
+      <button class="nav-btn" data-view="empresas">🏢 Empresas</button>
+      <button class="nav-btn" data-view="contactos">📞 Contactos</button>
+      <button class="nav-btn btn-login" data-view="login">👤 Iniciar Sesión</button>
+    </nav>
+  </header>
+
+  <!-- ============================================= -->
+  <!-- VISTA: INICIO (Noticias / Anuncios / Publicidad) -->
+  <!-- ============================================= -->
+  <main id="view-inicio" class="view active">
+    <section class="hero">
+      <h2>Bienvenido a Ruta Clara Huancayo</h2>
+      <p>Tu transporte público, ahora organizado y en tiempo real.</p>
+    </section>
+
+    <section class="seccion">
+      <h3 class="seccion-titulo">📰 Noticias</h3>
+      <div class="cards-grid">
+        <article class="noticia-card">
+          <div class="noticia-img">🚌</div>
+          <div class="noticia-body">
+            <span class="tag-fecha">10 Nov 2025</span>
+            <h4>Nueva ruta Línea 12 entra en operación</h4>
+            <p>La Municipalidad de Huancayo anunció la apertura de la Línea 12 que conecta El Tambo con Chilca.</p>
+          </div>
+        </article>
+        <article class="noticia-card">
+          <div class="noticia-img">📱</div>
+          <div class="noticia-body">
+            <span class="tag-fecha">08 Nov 2025</span>
+            <h4>App Ruta Clara alcanza 5,000 usuarios</h4>
+            <p>Más de cinco mil pasajeros ya consultan horarios desde sus celulares sin descargar apps.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h3 class="seccion-titulo">📢 Anuncios</h3>
+      <div class="cards-grid">
+        <article class="anuncio-card">
+          <h4>⚠️ Desvío temporal</h4>
+          <p>La Av. Giráldez estará cerrada por obras hasta el 20 de noviembre. Rutas 5 y 8 tienen desvío.</p>
+        </article>
+        <article class="anuncio-card">
+          <h4>🎉 Tarifa promocional</h4>
+          <p>Estudiantes con carné pagan S/ 0.80 en todas las rutas hasta fin de mes.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <h3 class="seccion-titulo">📣 Publicidad</h3>
+      <div class="cards-grid">
+        <article class="publicidad-card">
+          <span class="ad-badge">PUBLICIDAD</span>
+          <h4>Bodega "El Sol"</h4>
+          <p>A 2 cuadras del Paradero Central. ¡Ofertas todos los días!</p>
+        </article>
+        <article class="publicidad-card">
+          <span class="ad-badge">PUBLICIDAD</span>
+          <h4>Taller Mecánico Rápido</h4>
+          <p>Mantenimiento de buses con 20% de descuento para empresas asociadas.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================= -->
+  <!-- VISTA: HORARIOS (acordeón: Horario → Empresa → Ruta) -->
+  <!-- ============================================= -->
+  <main id="view-horarios" class="view">
+    <section class="seccion-titulo-wrap">
+      <h2>🕒 Horarios de Salida</h2>
+      <p class="subtitle">Despliega para ver empresas y rutas disponibles</p>
+    </section>
+
+    <div class="acordeon" id="acordeon-horarios">
+      <!-- Se genera con JS -->
+    </div>
+  </main>
+
+  <!-- ============================================= -->
+  <!-- VISTA: EMPRESAS (acordeón: Empresa → Info) -->
+  <!-- ============================================= -->
+  <main id="view-empresas" class="view">
+    <section class="seccion-titulo-wrap">
+      <h2>🏢 Empresas de Transporte</h2>
+      <p class="subtitle">Consulta la información completa de cada empresa</p>
+    </section>
+
+    <div class="acordeon" id="acordeon-empresas">
+      <!-- Se genera con JS -->
+    </div>
+  </main>
+
+  <!-- ============================================= -->
+  <!-- VISTA: CONTACTOS -->
+  <!-- ============================================= -->
+  <main id="view-contactos" class="view">
+    <section class="contact-wrap">
+      <h2>📞 Contactos</h2>
+      <p class="subtitle">Comunícate con nosotros</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <span class="contact-icon">📧</span>
+          <h4>Correo</h4>
+          <p>contacto@rutaclara.pe</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">📱</span>
+          <h4>WhatsApp</h4>
+          <p>+51 964 123 456</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">☎️</span>
+          <h4>Central</h4>
+          <p>(064) 234-567</p>
+        </div>
+        <div class="contact-card">
+          <span class="contact-icon">📍</span>
+          <h4>Oficina</h4>
+          <p>Jr. Ancash 123, Huancayo</p>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('¡Mensaje enviado!'); this.reset();">
+        <h3>Envíanos un mensaje</h3>
+        <input type="text" placeholder="Tu nombre" required />
+        <input type="email" placeholder="Tu correo" required />
+        <textarea rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- ============================================= -->
+  <!-- VISTA: LOGIN -->
+  <!-- ============================================= -->
+  <main id="view-login" class="view">
+    <section class="login-wrap">
+      <div class="login-card">
+        <span class="login-icon">🔐</span>
+        <h2>Iniciar Sesión</h2>
+        <p class="subtitle">Accede al sistema Ruta Clara</p>
+
+        <form onsubmit="event.preventDefault(); alert('Simulación de inicio de sesión');">
+          <div class="input-group">
+            <label>Correo o usuario</label>
+            <input type="text" placeholder="usuario@rutaclara.pe" required />
+          </div>
+          <div class="input-group">
+            <label>Contraseña</label>
+            <input type="password" placeholder="••••••••" required />
+          </div>
+
+          <select class="rol-select">
+            <option value="pasajero">👤 Pasajero</option>
+            <option value="conductor">🚍 Conductor</option>
+            <option value="empresa">🏢 Empresa</option>
+            <option value="municipalidad">🏛️ Municipalidad</option>
+          </select>
+
+          <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+
+        <p class="login-alt">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Ruta Clara Huancayo · Equipo N°1 Los Ganadores de la UC</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
